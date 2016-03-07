@@ -25,16 +25,17 @@ The `amqpbeat` module installs and configures the [amqpbeat message shipper](htt
 
 ### What amqpbeat affects
 
-By default `amqpbeat` adds a software repository to your system, and installs amqpbeat along
-with required configurations.
+By default `amqpbeat` uses puppet/archive to download and install amqpbeat and create your required configuration.
 
 ### Setup Requirements
 
-The `amqpbeat` module depends on [`puppetlabs/stdlib`](https://forge.puppetlabs.com/puppetlabs/stdlib), and on
-[`puppetlabs/apt`](https://forge.puppetlabs.com/puppetlabs/apt) on Debian based systems.
+The `amqpbeat` module depends on [`puppetlabs/stdlib`](https://forge.puppetlabs.com/puppetlabs/stdlib), and [`puppet/archive`](https://forge.puppetlabs.com/puppet/archive)
 
 ### Beginning with amqpbeat
 
 `amqpbeat` can be installed with `puppet module install stuartbfox-amqpbeat` (or with r10k, librarian-puppet, etc.)
 
 ## Usage
+
+## Limitations
+Tested on centos 6/7 and ubuntu 14.04/15.15
