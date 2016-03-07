@@ -25,7 +25,8 @@
         "6",
         "7"
       ]
-    },
+    }
+  ],
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
