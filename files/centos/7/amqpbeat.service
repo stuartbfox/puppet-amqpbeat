@@ -1,0 +1,12 @@
+[Unit]
+Description=amqpbeat
+Documentation=https://github.com/robinpercy/amqpbeat
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/opt/amqpbeat/amqpbeat -c /etc/amqpbeat/amqpbeat.yml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
